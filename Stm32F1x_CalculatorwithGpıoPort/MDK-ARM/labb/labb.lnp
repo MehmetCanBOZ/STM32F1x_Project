@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"labb\startup_stm32f107xc.o"
+"labb\main.o"
+"labb\stm32f1xx_it.o"
+"labb\stm32f1xx_hal_msp.o"
+"labb\stm32f1xx_hal_gpio_ex.o"
+"labb\stm32f1xx_hal_tim.o"
+"labb\stm32f1xx_hal_tim_ex.o"
+"labb\stm32f1xx_hal.o"
+"labb\stm32f1xx_hal_rcc.o"
+"labb\stm32f1xx_hal_rcc_ex.o"
+"labb\stm32f1xx_hal_gpio.o"
+"labb\stm32f1xx_hal_dma.o"
+"labb\stm32f1xx_hal_cortex.o"
+"labb\stm32f1xx_hal_pwr.o"
+"labb\stm32f1xx_hal_flash.o"
+"labb\stm32f1xx_hal_flash_ex.o"
+"labb\stm32f1xx_hal_exti.o"
+"labb\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "labb\labb.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "labb.map" -o labb\labb.axf
